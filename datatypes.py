@@ -11,7 +11,9 @@ print(sk)
 print(sk[0])
 print(type(sk))
 mystring="Sridhar Kidambi "
+print(f"my name is  {mystring}") #new way for formatting
 print(("sridhar kidambi {c} {d}").format(c="is" ,d="great"))
+
 print(mystring.upper())
 print(mystring.lower())
 print(mystring.split())
