@@ -48,3 +48,11 @@ mycheckstring.reverse()
 print(mycheckstring)
 mynum=[1,1,[1,2]]
 print(mynum[2][1])
+# dictionary is unordered collection
+# hashmap gives unordered for ordered use treemap or sortedmap or linkedhashmap
+#  HashMap is very much similar to Hashtable only difference is Hashtable has all method synchronized 
+#  for thread safety while HashMap has non-synchronized methods for better performance.
+
+my_dic={'key1': 'value1','key2': 'value2','key1': 'value1','key3': {'value2':'sample piece'}}
+# my_dic.items.
+print(my_dic['key3']['value2'])
