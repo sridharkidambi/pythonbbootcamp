@@ -7,6 +7,10 @@ sk=2
 print(sk)
 print(type(sk))
 sk=['me','da']
+sk.append('rascal')
+sk.append('rascal1')
+print(sk)
+sk.pop(3)
 print(sk)
 print(sk[0])
 print(type(sk))
@@ -31,3 +35,16 @@ k=100/177
 print(k)
 print("the result was {k1:1.4f}".format(k1=k))  
 # the ablve line 1  resembles width
+
+mycheckstring=['a','z','d','b']
+print(mycheckstring)
+mycheckstring.sort()
+castedString=mycheckstring.sort()
+type(mycheckstring)
+print('hi')
+print(mycheckstring)
+print(type(castedString))
+mycheckstring.reverse()
+print(mycheckstring)
+mynum=[1,1,[1,2]]
+print(mynum[2][1])
