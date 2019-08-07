@@ -56,3 +56,4 @@ print(mynum[2][1])
 my_dic={'key1': 'value1','key2': 'value2','key1': 'value1','key3': {'value2':'sample piece'}}
 # my_dic.items.
 print(my_dic['key3']['value2'])
+print(my_dic['key3']['value2'].upper())
