@@ -57,3 +57,26 @@ my_dic={'key1': 'value1','key2': 'value2','key1': 'value1','key3': {'value2':'sa
 # my_dic.items.
 print(my_dic['key3']['value2'])
 print(my_dic['key3']['value2'].upper())
+# Dictionaries are mappings and do not retain order! If you do want the capabilities of a dictionary but you would like ordering as well, check out the ordereddict object lecture later on in the course!
+
+#  Tuples are similar to List means they are immutable
+# Advantages of immutable objects:
+
+# An immutable object remains in exactly one state, the state in which it was created. Therefore, immutable object is thread-safe so there is no synchronization issue. They cannot be corrupted by multiple threads accessing them concurrently. This is far and away the easiest approach to achieving thread safety.
+# Immutable classes are easier to design, implement, and use than mutable classes.
+# Immutable objects are good Map keys and Set elements, since these typically do not change once created.
+# Immutability makes it easier to write, use and reason about the code (class invariant is established once and then unchanged).
+# Immutability makes it easier to parallelize program as there are no conflicts among objects.
+# The internal state of program will be consistent even if you have exceptions.
+# References to immutable objects can be cached as they are not going to change. (i.e. in Hashing it provide fast operations).
+# Disadvantages of immutable objects:
+
+# Creating an immutable class seems at first to provide an elegant solution. However, whenever you do need a modified object 
+# of that new type you must suffer the overhead of a new object creation, as well as potentially causing more frequent garbage collections. 
+# The only real disadvantage of immutable classes is that they require a separate object for each distinct value.
+
+# Defensive copy:
+# the get method should return the new object value or else the caller can change the value.
+
+tple_value=(1,2,"sk",[1,2,3])
+print(tple_value[3][1])
