@@ -52,9 +52,10 @@ print(mynum[2][1])
 # hashmap gives unordered for ordered use treemap or sortedmap or linkedhashmap
 #  HashMap is very much similar to Hashtable only difference is Hashtable has all method synchronized 
 #  for thread safety while HashMap has non-synchronized methods for better performance.
-
+print('dictionaries')
 my_dic={'key1': 'value1','key2': 'value2','key1': 'value1','key3': {'value2':'sample piece'}}
 # my_dic.items.
+print(my_dic)
 print(my_dic['key3']['value2'])
 print(my_dic['key3']['value2'].upper())
 # Dictionaries are mappings and do not retain order! If you do want the capabilities of a dictionary but you would like ordering as well, check out the ordereddict object lecture later on in the course!
@@ -80,3 +81,26 @@ print(my_dic['key3']['value2'].upper())
 
 tple_value=(1,2,"sk",[1,2,3])
 print(tple_value[3][1])
+print(tple_value.count("sk"))
+print(tple_value.index("sk"))
+
+print('******************SET****************** ')
+myset= set()
+myset.add(1)
+myset.add(2)
+myset.add(2)
+print(myset)
+myset1= list('Parallel')
+print(myset1)
+print(1==1)
+print(set([1,1,2,3]))
+myfile=open("myfile.txt")
+print(myfile.read())
+myfile.seek(0)
+print(myfile.read())
+myfile.seek(0)
+print(myfile.readlines())
+with open('myfile.txt',mode='a' ) as  my_file_txt:
+    my_file_txt.write("askdlasndln")
+    
+
