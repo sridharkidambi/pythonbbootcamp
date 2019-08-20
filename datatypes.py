@@ -168,3 +168,20 @@ for index,item in enumerate(emum_string):
     print(index)
     print(item)
     print('\n')
+print("*********** ZIP PYTHON *****************")
+my_tple_list2=[(1,2),(3,4),(5,6),(7,8),(9,10),(1,2),(3,4),(5,6),(7,8),(9,10)]
+
+for item in zip(my_tple_list,my_tple_list2):
+    print(item)
+print("*********** IN  PYTHON *****************")
+print('sk' in ['sk',2 ,3])
+print("*********** MAX/MIN  PYTHON *****************")
+print(min(my_tple_list))
+print("*********** RANDOM LIBRARY PYTHON *****************")
+print(my_tple_list)
+from random import shuffle
+print(shuffle(my_tple_list))
+print(my_tple_list)
+from random import randint
+myny=randint(0,100)
+print(myny)
