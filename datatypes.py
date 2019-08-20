@@ -159,3 +159,12 @@ while i<=100:
     i=i+1
 else:
     print("out of while loop")
+print("*********** RANGE in PYTHON *****************")
+for item in range(0,10,5):
+    print(item)
+emum_string="Sridhar kidambi"
+
+for index,item in enumerate(emum_string):
+    print(index)
+    print(item)
+    print('\n')
