@@ -30,6 +30,11 @@ print(mystring[2:6:2])
 print(mystring[2:])
 print(mystring[:3])
 print(mystring[2:10])
+
+# reverse a string
+name_my='cinema'
+print('reverse string is:')
+print(name_my[::-1])
 # float formatting
 k=100/177
 print(k)
@@ -37,8 +42,12 @@ print("the result was {k1:1.4f}".format(k1=k))
 # the ablve line 1  resembles width
 
 mycheckstring=['a','z','d','b']
+print ('sorted')
+
+print(sorted(mycheckstring))
 print(mycheckstring)
 mycheckstring.sort()
+print(mycheckstring)
 castedString=mycheckstring.sort()
 type(mycheckstring)
 print('hi')
@@ -58,12 +67,15 @@ my_dic={'key1': 'value1','key2': 'value2','key1': 'value1','key3': {'value2':'sa
 print(my_dic)
 print(my_dic['key3']['value2'])
 print(my_dic['key3']['value2'].upper())
-# Dictionaries are mappings and do not retain order! If you do want the capabilities of a dictionary but you would like ordering as well, check out the ordereddict object lecture later on in the course!
+# Dictionaries are mappings and do not retain order! If you do want the capabilities of a dictionary but you would like ordering as well, 
+# check out the ordereddict object lecture later on in the course!
 
 #  Tuples are similar to List means they are immutable
 # Advantages of immutable objects:
 
-# An immutable object remains in exactly one state, the state in which it was created. Therefore, immutable object is thread-safe so there is no synchronization issue. They cannot be corrupted by multiple threads accessing them concurrently. This is far and away the easiest approach to achieving thread safety.
+# An immutable object remains in exactly one state, the state in which it was created. Therefore, immutable object is thread-safe so there is no 
+# synchronization issue. They cannot be corrupted by multiple threads accessing them concurrently. This is far and away the easiest approach to achieving 
+# thread safety.
 # Immutable classes are easier to design, implement, and use than mutable classes.
 # Immutable objects are good Map keys and Set elements, since these typically do not change once created.
 # Immutability makes it easier to write, use and reason about the code (class invariant is established once and then unchanged).
@@ -102,5 +114,26 @@ myfile.seek(0)
 print(myfile.readlines())
 with open('myfile.txt',mode='a' ) as  my_file_txt:
     my_file_txt.write("askdlasndln")
-    
+print(100**.5)
+print(3 !=3)
+
+#  logical operators
+print(1<2>3)
+print(1<2<3)
+print(not(1<2 and 2<3))
+
+#  control statements:
+
+# if elif else
+print("*********** IF ELIF ELSE in PYTHON *****************")
+if not(1<2 and 2<3) == True :
+    print("IF is working")
+elif not(1<2 and 2<3) == 1 :
+    print("ELIF is working")
+else:
+    print("default print for ELSE")
+
+# for loop in python
+print("*********** FOR LOOP in PYTHON *****************")
+
 
