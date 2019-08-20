@@ -135,5 +135,17 @@ else:
 
 # for loop in python
 print("*********** FOR LOOP in PYTHON *****************")
+for item in my_dic:
+    print(my_dic[item])
+for item in 'hello world':
+    print(item)
+for item in tple_value:
+    print(item)
 
+# TUPLE unpacking
+print ('*********TUPLE unpacking****************')
+my_tple_list=[(1,2),(3,4),(5,6),(7,8)]
 
+for (a,b) in my_tple_list:
+    print(a)
+    print(b)
