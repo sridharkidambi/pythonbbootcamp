@@ -144,8 +144,18 @@ for item in tple_value:
 
 # TUPLE unpacking
 print ('*********TUPLE unpacking****************')
-my_tple_list=[(1,2),(3,4),(5,6),(7,8)]
+my_tple_list=[(1,2),(3,4),(5,6),(7,8),(9,10)]
 
 for (a,b) in my_tple_list:
     print(a)
     print(b)
+i=0
+print ('*********WHILE LOOp****************')
+while i<=100:
+#    comment
+    print(i)
+    # continue break
+    pass    
+    i=i+1
+else:
+    print("out of while loop")
