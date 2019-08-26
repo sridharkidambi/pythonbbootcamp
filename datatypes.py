@@ -192,5 +192,27 @@ print(float(inresul))
 #  LIST comprehension
 
 print("*********** LIST comprehension PYTHON *****************")
-new_lst= [item for item in emum_string if item=='a']
+new_lst= [item for item in emum_string  if item=='a' ]
 print(new_lst)
+
+print("*********** NESTED FOR LOOP PYTHON *****************")
+nesterd_list_items=[]
+
+for i in [1,2,3,4,5]:
+    for j in [100,200,300,400,500]:
+        nesterd_list_items.append(i*j)
+print(nesterd_list_items)
+value = 124
+print(value, 'is', 'even' if value % 2 == 0 else 'odd')
+
+for i in range(1,101,1) :
+    if  i%3==0 and i%5!=0  :
+        print('FIZZ3')
+    elif ( i%5==0 and i%3!=0 ) :
+        print('FIZZ5')
+    elif ( i%3==0 and i%5==0 ) :
+        print('FIZZALL35')
+    else :
+        print(i)
+
+    
