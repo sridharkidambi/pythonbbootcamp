@@ -185,3 +185,12 @@ print(my_tple_list)
 from random import randint
 myny=randint(0,100)
 print(myny)
+inresul=input('enter a number here:')
+print(inresul)
+print(type(inresul))
+print(float(inresul))
+#  LIST comprehension
+
+print("*********** LIST comprehension PYTHON *****************")
+new_lst= [item for item in emum_string if item=='a']
+print(new_lst)
