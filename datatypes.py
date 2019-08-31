@@ -215,4 +215,12 @@ for i in range(1,101,1) :
     else :
         print(i)
 
-    
+    # help function:
+
+    # help(my_dic)
+
+def sridharkidambifunc(name):
+    return ('hello-->'+ name)
+
+myresult= sridharkidambifunc('sridharKidambi')
+print(myresult) 
