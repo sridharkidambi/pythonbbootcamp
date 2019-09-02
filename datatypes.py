@@ -265,3 +265,14 @@ print( list(map(squareme,nums)))
 
 print('lambda functions:')
 print(list(map(lambda num: num**2,nums)))
+print('L E G B local enclosing global  and built-in')
+
+ab=10
+
+def myfunc3():
+    global ab
+    print(f'number global is:{ab}')
+    ab=500
+    print(f'number global is:{ab}')
+    print( ab )
+myfunc3()
