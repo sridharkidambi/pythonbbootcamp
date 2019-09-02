@@ -224,3 +224,44 @@ def sridharkidambifunc(name):
 
 myresult= sridharkidambifunc('sridharKidambi')
 print(myresult) 
+
+print('***********MULTI PARAM ARGUEMENTS-tuple format************')
+def funcmeMultiparams(*args): #return tuples means immutable
+    return sum(args)
+
+resutmmulti = funcmeMultiparams(10,20,30,40,50) 
+
+print(resutmmulti)
+
+print('***********MULTI PARAM ARGUEMENTS-tuple format************')
+def funcmeMultiparamsdic(**kwargs): #return dictionary means immutable
+    print(kwargs)
+    return 'firstName is: ' + kwargs['firsname']
+
+resutmmultikw = funcmeMultiparamsdic(firsname='sk' , lastname='ks') 
+
+print(resutmmultikw.capitalize())
+print(resutmmultikw[::-1])
+
+print ('*****'.join(['a','b','c','d']))
+
+print(sum([1,2,4,5]))
+print('***********LAMBDA FUNCTIONS MAP AND FILTERS ************')
+def squareme(num):
+    return num**2
+def squareme1(num):
+    return num%2 ==0
+
+
+nums=[1,2,3,4,5]
+
+for item in map(squareme,nums):
+    print(item)
+print('filter methods->')
+for item in filter(squareme1,nums):
+    print( item)
+
+print( list(map(squareme,nums)))
+
+print('lambda functions:')
+print(list(map(lambda num: num**2,nums)))
