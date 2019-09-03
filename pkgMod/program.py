@@ -11,4 +11,4 @@ def progfunc():
 if __name__ =='__main__':
     print('this is run directly')
 else:
-    print(' iam being called by someone')
+    print(' PROGRAM -> iam being called by someone')
