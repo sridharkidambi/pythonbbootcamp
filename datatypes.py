@@ -276,3 +276,16 @@ def myfunc3():
     print(f'number global is:{ab}')
     print( ab )
 myfunc3()
+
+import string
+
+print (set (string.ascii_lowercase))
+print (set ('The quick brown fox  jumps over the lazy dog'.lower())>= set (string.ascii_lowercase))
+
+#  PACKAGES AND MODULES
+
+# PyPI - repository for the python libraries.linek npm for nodejs
+
+import json
+
+print(json.dumps({'9': 5, '6': 7}, sort_keys=True, indent=4))
