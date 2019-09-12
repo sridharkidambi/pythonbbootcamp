@@ -281,6 +281,8 @@ def callmethod():
     obj=sampleclass("Sridhar Kidambi")
     print(len(obj))
     print(obj)
+    print(obj.arthme(10,10))
+    print(obj.arthme(10,'ab'))
 
 myfunc3()
 

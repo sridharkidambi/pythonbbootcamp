@@ -11,4 +11,12 @@ class sampleclass:
 
     def __str__(self):
         return( f"my name is {self.name}")
+
+    def arthme(self,num1,num2):
+        try:
+            k= num1+num2
+        except:
+            return "not adding,i am an exception"
+        else:
+            return k
     
