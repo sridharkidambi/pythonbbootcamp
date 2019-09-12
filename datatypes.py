@@ -1,3 +1,5 @@
+from myclass.sampleclass import sampleclass
+
 max_num = float("-inf") 
 print(' hello \n World')
 print(len(' hello \n World'))
@@ -275,6 +277,10 @@ def myfunc3():
     ab=500
     print(f'number global is:{ab}')
     print( ab )
+def callmethod():
+    obj=sampleclass()
+    print(len(obj))
+
 myfunc3()
 
 import string
@@ -289,3 +295,11 @@ print (set ('The quick brown fox  jumps over the lazy dog'.lower())>= set (strin
 import json
 
 print(json.dumps({'9': 5, '6': 7}, sort_keys=True, indent=4))
+
+callmethod()
+
+k=(1,2)
+a,b =k
+print(a)
+print(b)
+print(k)

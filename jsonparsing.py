@@ -12,5 +12,6 @@ json_object=  json.load(file_obj)
 
 namedTupleConstructor = namedtuple('myNamedTuple', ' '.join(sorted(json_object.keys())))
 nt= namedTupleConstructor(**json_object)
+print(nt)
 cat = namedtupled.map(json_object)
 print(cat.accounting[0].lastName)
