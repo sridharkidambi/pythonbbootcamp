@@ -278,8 +278,9 @@ def myfunc3():
     print(f'number global is:{ab}')
     print( ab )
 def callmethod():
-    obj=sampleclass()
+    obj=sampleclass("Sridhar Kidambi")
     print(len(obj))
+    print(obj)
 
 myfunc3()
 

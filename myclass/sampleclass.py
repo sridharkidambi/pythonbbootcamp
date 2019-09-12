@@ -1,5 +1,6 @@
 class sampleclass:
-    def __init(self):
+    def __init__(self,name):
+        self.name=name
         pass
 
     def printme(self,str):
@@ -7,4 +8,7 @@ class sampleclass:
 
     def __len__(self):
         return 1
+
+    def __str__(self):
+        return( f"my name is {self.name}")
     
