@@ -306,3 +306,39 @@ a,b =k
 print(a)
 print(b)
 print(k)
+
+print('************************** DYNAMICALLY CREATE FUNCTIONS *********************************************************')
+import sys
+import importlib
+from  myclass.sampleclass import sampleclass
+module = importlib.import_module("myclass.sampleclass")
+class_ = getattr(module, "sampleclass")
+print(class_)
+instance = class_('sk')
+obj_assign=instance
+del instance
+# print(instance)
+print(obj_assign.arthme(2,3))
+
+print('**************************DECORATERS************************************************')
+
+def outerfunction(name):
+
+    print( 'i am outer function ->'+name)
+
+    def insidefunct(name):
+        print('i am the inner function 1.' + name)
+        return insidefunct
+
+    def insidefunct2(name):
+        print('i am the inner function2' + name)
+        return None
+    if(name=='sk'):
+        return insidefunct
+    else:
+        return insidefunct2
+
+print(outerfunction('sk'))
+print(outerfunction('sk')('AB'))
+    
+
