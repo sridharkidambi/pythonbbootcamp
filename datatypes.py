@@ -322,6 +322,9 @@ print(obj_assign.arthme(2,3))
 
 print('**************************DECORATERS************************************************')
 
+def runfucnt(passedfuncname):
+    passedfuncname
+
 def outerfunction(name):
 
     print( 'i am outer function ->'+name)
@@ -339,6 +342,8 @@ def outerfunction(name):
         return insidefunct2
 
 print(outerfunction('sk'))
-print(outerfunction('sk')('AB'))
+passme_mthd=outerfunction('sk')
+print(passme_mthd('ks'))
+print(runfucnt(passme_mthd('AB')))
     
 
