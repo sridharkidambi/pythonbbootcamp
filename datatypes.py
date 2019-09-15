@@ -323,7 +323,18 @@ print(obj_assign.arthme(2,3))
 print('**************************DECORATERS************************************************')
 
 def runfucnt(passedfuncname):
+    print( ' passedfuncname i am more than required............')
+    print(passedfuncname)
     passedfuncname
+
+def runfucntMoreDec(passedfuncname):
+    def moredec():
+        print( ' starting i am more than required............')
+        print(passedfuncname)
+        passedfuncname('sample')
+        print( ' i am more than required............')
+        
+    return moredec
 
 def outerfunction(name):
 
@@ -345,5 +356,7 @@ print(outerfunction('sk'))
 passme_mthd=outerfunction('sk')
 print(passme_mthd('ks'))
 print(runfucnt(passme_mthd('AB')))
+moredec_out=runfucntMoreDec(passme_mthd('AB'))
+moredec_out()
     
 
