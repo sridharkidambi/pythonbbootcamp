@@ -397,3 +397,11 @@ def samplexcept():
 samplexcept()
 
 print('**************************GENERATOR OBJECT************************************************')
+
+
+def yldme(num):
+    for i in range(0,num,1):
+        yield i**3
+
+for i in yldme(10):
+    print(i)
