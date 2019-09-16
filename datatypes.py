@@ -358,5 +358,17 @@ print(passme_mthd('ks'))
 print(runfucnt(passme_mthd('AB')))
 moredec_out=runfucntMoreDec(passme_mthd('AB'))
 moredec_out()
-    
 
+print('**************************EXCEPTION HANDLING************************************************')
+
+def samplexcept():
+    try:
+        num=int(input('enter a number alone:-> '))
+    except ValueError:
+        print( 'i am genrally handled ValueError')
+    except:
+        print( 'i am genrally handled')
+    finally:
+        print( 'i am finally handled')
+
+samplexcept()
