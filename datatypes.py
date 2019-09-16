@@ -1,4 +1,10 @@
 from myclass.sampleclass import sampleclass
+import sys
+import importlib
+from  myclass.sampleclass import sampleclass
+from random import shuffle
+import string
+import json
 
 max_num = float("-inf") 
 print(' hello \n World')
@@ -181,7 +187,6 @@ print("*********** MAX/MIN  PYTHON *****************")
 print(min(my_tple_list))
 print("*********** RANDOM LIBRARY PYTHON *****************")
 print(my_tple_list)
-from random import shuffle
 print(shuffle(my_tple_list))
 print(my_tple_list)
 from random import randint
@@ -286,7 +291,7 @@ def callmethod():
 
 myfunc3()
 
-import string
+# import string
 
 print (set (string.ascii_lowercase))
 print (set ('The quick brown fox  jumps over the lazy dog'.lower())>= set (string.ascii_lowercase))
@@ -295,7 +300,7 @@ print (set ('The quick brown fox  jumps over the lazy dog'.lower())>= set (strin
 
 # PyPI - repository for the python libraries.linek npm for nodejs
 
-import json
+
 
 print(json.dumps({'9': 5, '6': 7}, sort_keys=True, indent=4))
 
@@ -308,9 +313,7 @@ print(b)
 print(k)
 
 print('************************** DYNAMICALLY CREATE FUNCTIONS *********************************************************')
-import sys
-import importlib
-from  myclass.sampleclass import sampleclass
+
 module = importlib.import_module("myclass.sampleclass")
 class_ = getattr(module, "sampleclass")
 print(class_)
@@ -333,6 +336,15 @@ def runfucntMoreDec(passedfuncname):
         print(passedfuncname)
         passedfuncname('sample')
         print( ' i am more than required............')
+        
+    return moredec
+def runfucntMoreDec1(passedfuncname):
+    def moredec(name):
+        print( ' starting i am more than required............')
+        # passedfuncname()
+        # passedfuncname('sample')
+        print( ' i am more than required............')
+        passedfuncname(name)
         
     return moredec
 
@@ -359,15 +371,26 @@ print(runfucnt(passme_mthd('AB')))
 moredec_out=runfucntMoreDec(passme_mthd('AB'))
 moredec_out()
 
+@runfucntMoreDec1
+def sample(name):
+    print('decorator by sridhar '+ name)
+
+sample('sk')
+
 print('**************************EXCEPTION HANDLING************************************************')
 
 def samplexcept():
     try:
         num=int(input('enter a number alone:-> '))
+        print(num)
     except ValueError:
         print( 'i am genrally handled ValueError')
-    except:
-        print( 'i am genrally handled')
+    except Exception as e:
+        print( 'I am genrally handled->' + e)
+    # except, e:
+    #     print( 'i am genrally handled')
+    else:
+        print('thank you for entering a number')
     finally:
         print( 'i am finally handled')
 
