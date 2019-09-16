@@ -395,3 +395,5 @@ def samplexcept():
         print( 'i am finally handled')
 
 samplexcept()
+
+print('**************************GENERATOR OBJECT************************************************')
