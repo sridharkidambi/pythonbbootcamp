@@ -398,10 +398,22 @@ samplexcept()
 
 print('**************************GENERATOR OBJECT************************************************')
 
-
+lsy=[]
 def yldme(num):
     for i in range(0,num,1):
-        yield i**3
+        lsy.append(i**2)
+        print('yield me length is')
+        print(len(lsy))
+        print(lsy)
+        yield i**2
+        i=0
 
 for i in yldme(10):
+    print('i value is:' + str(i))
+    print('list is')
+    if(i!=0):
+        print(lsy[int(i**.5)])
+    print(lsy)
+    print('yield is')
     print(i)
+print(len(lsy))
