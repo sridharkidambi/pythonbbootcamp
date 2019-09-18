@@ -417,3 +417,15 @@ for i in yldme(10):
     print('yield is')
     print(i)
 print(len(lsy))
+
+k =yldme(4)
+print('************NEXT*******************')
+print(next(k))
+print(next(k))
+print(next(k))
+print(next(k))
+
+
+s='hello sridhar'
+iter_me= iter(s)
+print(next(iter_me))
