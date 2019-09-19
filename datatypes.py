@@ -10,6 +10,9 @@ import pandas as pd
 from collections import defaultdict
 from collections import OrderedDict
 from collections import namedtuple
+import datetime
+import pdb
+import timeit
 
 max_num = float("-inf") 
 print(' hello \n World')
@@ -479,5 +482,29 @@ cat =namedtuple('cat','eyes paws skincolor')
 c=cat(eyes='brown',paws=2,skincolor=True)
 
 print(c.eyes)
+print(c)
+print('*****************************DATTETIME*************************************************') 
+t=datetime.time(5,40,55)
+print(t)
+print(datetime.time.min)
+print(datetime.time.max)
+print(datetime.time.resolution)
+print(datetime.date.today())
+print(datetime.date.today().timetuple())
+print('*****************************DEBUGGING*************************************************') 
+a=[1,2,3,4]
+b = 3
+c = 5
+pdb.set_trace()
+k= b + c
+print(k)
+print('*****************************TIMEIT*************************************************') 
+
+# print("%timeit "-".join(str(n) for n in range(100))")
+print('values are:')
+print("-".join(str(n) for n in range(1,100,1)))
+print(timeit.timeit('"-".join(str(n) for n in range(1,100,1))',number=1000))
+print(timeit.timeit('"-".join([str(n) for n in range(1,100,1)])',number=1000))
+print(timeit.timeit('"-".join(map(str, range(100)))',number=1000))
 print('*****************************PANDAS*************************************************') 
-pd.read_csv
+# pd.read_csv
