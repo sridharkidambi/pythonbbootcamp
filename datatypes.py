@@ -13,7 +13,8 @@ from collections import namedtuple
 import datetime
 import pdb
 import timeit
-
+import re
+import  stringIO
 max_num = float("-inf") 
 print(' hello \n World')
 print(len(' hello \n World'))
@@ -78,7 +79,7 @@ print(mynum[2][1])
 #  HashMap is very much similar to Hashtable only difference is Hashtable has all method synchronized 
 #  for thread safety while HashMap has non-synchronized methods for better performance.
 print('dictionaries')
-my_dic={'key1': 'value1','key2': 'value2','key1': 'value1','key3': {'value2':'sample piece'}}
+my_dic={'key1': 'value1','key2': 'value2','key4': 'value1','key3': {'value2':'sample piece'}}
 # my_dic.items.
 print(my_dic)
 print(my_dic['key3']['value2'])
@@ -506,5 +507,15 @@ print("-".join(str(n) for n in range(1,100,1)))
 print(timeit.timeit('"-".join(str(n) for n in range(1,100,1))',number=1000))
 print(timeit.timeit('"-".join([str(n) for n in range(1,100,1)])',number=1000))
 print(timeit.timeit('"-".join(map(str, range(100)))',number=1000))
+print('*****************************REGULAR EXPRESSIONS*************************************************')
+patterns=['text1','text2']
+print(re.search('hello','hello world'))
+if re.search('hello','hello world'):
+    print('found object')
+else:
+    print('not found')
+
+print(re.findall('sk','sk is my sk'))
+print(re.match(r'\d','5'))
 print('*****************************PANDAS*************************************************') 
 # pd.read_csv
