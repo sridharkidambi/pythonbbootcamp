@@ -5,3 +5,7 @@
 
 dynamic typing ->same variable different datypes.
 type(variable ) will tell the datatype.
+
+
+Data munging or data wrangling:
+it is  the process of cleanig the data and formatting it properly.

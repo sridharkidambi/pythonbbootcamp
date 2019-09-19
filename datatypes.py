@@ -5,6 +5,11 @@ from  myclass.sampleclass import sampleclass
 from random import shuffle
 import string
 import json
+from collections import Counter 
+import pandas as pd
+from collections import defaultdict
+from collections import OrderedDict
+from collections import namedtuple
 
 max_num = float("-inf") 
 print(' hello \n World')
@@ -429,3 +434,50 @@ print(next(k))
 s='hello sridhar'
 iter_me= iter(s)
 print(next(iter_me))
+
+print('*****************************GENERATOR COMPREHENSION*************************************************')
+input_values=[1,2,3,4,5]
+gene_comp= (item for item in input_values if item>3)
+
+for i in gene_comp:
+    print(i)
+
+print('*****************************COUNTERS*************************************************') 
+
+ctr_name=" i am sridhar kidambi i am sridhar kidambi  i am"
+ctr_obj=Counter(ctr_name.split())
+print(ctr_obj.most_common(2))
+print(ctr_obj)
+print(list(ctr_obj))
+print(set(ctr_obj))
+print(ctr_obj.items())
+print(sum(ctr_obj.values()))
+
+print('*****************************DEFAULTDICT*************************************************') 
+d =defaultdict(object)
+print(d['one'])
+for item in d:
+    print(item)
+print('*********')
+d1 = defaultdict(lambda :0)
+print(d1['one'])
+for item in d1:
+    print(item)
+print('*****************************ORDERED DICT*************************************************') 
+e = OrderedDict()
+e['a']=1
+e['b']=2
+e['c']=3
+e['d']=4
+e['e']=5
+
+for k,v in e.items():
+    print(k,v) 
+print('*****************************NAMEDTUPLES*************************************************') 
+cat =namedtuple('cat','eyes paws skincolor')
+
+c=cat(eyes='brown',paws=2,skincolor=True)
+
+print(c.eyes)
+print('*****************************PANDAS*************************************************') 
+pd.read_csv
