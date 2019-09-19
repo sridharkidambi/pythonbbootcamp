@@ -14,7 +14,7 @@ import datetime
 import pdb
 import timeit
 import re
-import  stringIO
+from io import StringIO
 max_num = float("-inf") 
 print(' hello \n World')
 print(len(' hello \n World'))
@@ -517,5 +517,12 @@ else:
 
 print(re.findall('sk','sk is my sk'))
 print(re.match(r'\d','5'))
+print('*****************************STRING IO*************************************************')
+
+message='this is the sample StringIO'
+result_string= StringIO(message)
+print(result_string.read())
+print(result_string.read())
+
 print('*****************************PANDAS*************************************************') 
 # pd.read_csv
