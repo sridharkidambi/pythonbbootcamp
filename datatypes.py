@@ -524,5 +524,9 @@ result_string= StringIO(message)
 print(result_string.read())
 print(result_string.read())
 
+print('*****************************ANDAVANCED NUMBERS*************************************************')
+print(hex(2))
+print(bin(2))
+print(pow(2,3,3))
 print('*****************************PANDAS*************************************************') 
 # pd.read_csv
