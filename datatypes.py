@@ -528,5 +528,10 @@ print('*****************************ANDAVANCED NUMBERS**************************
 print(hex(2))
 print(bin(2))
 print(pow(2,3,3))
+print('*****************************ANDAVANCED STRINGS*************************************************')
+print(message.find('O'))
+print(message.center(40,'Z'))
+print("u skdjfdsfnodhg\tndlgndfog")
+print(message.partition('i'))
 print('*****************************PANDAS*************************************************') 
 # pd.read_csv
