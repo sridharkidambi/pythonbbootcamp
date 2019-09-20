@@ -533,5 +533,37 @@ print(message.find('O'))
 print(message.center(40,'Z'))
 print("u skdjfdsfnodhg\tndlgndfog")
 print(message.partition('i'))
+print('*****************************ANDAVANCED SET*************************************************')
+s=set()
+s.add(1)
+s.add(2)
+print(s)
+s1={1,2,4}
+print(s.intersection_update(s1))
+print(s.issuperset(s1))
+print(s.isdisjoint(s1))
+print(s.symmetric_difference(s1))
+print(s.union(s1))
+s.remove(1)
+print(s)
+print('*****************************ANDAVANCED DICTIONARIES*************************************************')
+
+d = {'k1':1,'k2':2}
+
+for item in d.keys():
+    print(item)
+
+print({x:x**2  for x in range(10)}) 
+print({k:v**2  for k,v in zip(['a','b','c'], range(3))}) 
+print('*****************************ANDAVANCED DICTIONARIES*************************************************')
+
+l=[1,2,3,4,5]
+l.append([6,7])
+l.extend([8,9,10])
+l.pop(0)
+# print(l.index(2,'abcd'))
+# print(l.pop(0))
+l.reverse()
+print(l)
 print('*****************************PANDAS*************************************************') 
 # pd.read_csv
